@@ -1,0 +1,59 @@
+body {
+  padding: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.main-title {
+  margin-top: 20%;
+  font-size: 60px;
+  color: white;
+}
+
+.subtitle-box {
+  margin-top: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-size: 18px;
+  height: 35px;
+  line-height: 35px;
+  color: #BFC3C9;
+  border: 1px solid white;
+}
+
+.logo-image {
+  margin: 10% 0px;
+}
+
+.loading-icon {
+  color: #4A5876;
+  font-size: 15px;
+}
+
+.loading-icon .loading-image img {
+  height: 80px;
+}
+
+.login-btn > img {
+  width: 80%;
+  margin: 8px 0px;
+}
+
+
+.logo-image > img {
+  width: 90%;
+}
+
+.location-loading-image {
+  margin-top: 15%;
+}
+
+.location-loading-image > img {
+  width: 100%;
+}

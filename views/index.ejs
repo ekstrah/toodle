@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+    <title>Doodle.toi</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            // For google fonts
+            google: {
+                families: ['Droid Serif']
+            },
+            // For early access or custom font
+            custom: {
+                families: ['Nanum Gothic'],
+                urls: ['https://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div id="main_page_container">
+    <h1 class="main-title text-center">doodle.toi</h1>
+
+    <div class="subtitle-box text-center">Let's write something on the wall</div>
+
+    <div class="logo-image text-center">
+        <img src="/images/main_logo.png" />
+    </div>
+
+    <!-- 로딩 아이콘 영역 -->
+    <div class="loading-icon">
+        <div class="loading-image text-center">
+            <img src="/images/splash_indicator.png" />
+        </div>
+        <div class="loading-text text-center">LOADING APP</div>
+    </div>
+
+    <!-- 로그인 영역  -->
+    <div class="login-box" style="display: none;">
+        <div id="naver_login_btn" class="login-btn text-center">
+            <img src="/images/main_naverlogin.png" />
+        </div>
+        <div id="kakao_login_btn" class="login-btn text-center">
+            <img src="/images/main_kakaologin.png" />
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/javascripts/httpUtil.js" charset="utf-8"></script>
+<script type="text/javascript" src="/javascripts/index.js" charset="utf-8"></script>
+</body>
+</html>

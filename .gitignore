@@ -1,0 +1,15 @@
+node_module/
+node_modules/
+lib/node_modules/
+mongodb/
+public/components/
+<<<<<<< f8c57c2e7f90b95c4c161b8217ef192e548eab31
+
+.idea/
+=======
+keys/
+>>>>>>> lcoal commit
+
+dump/
+
+public/upload

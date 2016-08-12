@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+    <title>Doodle.toi</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/board.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            // For google fonts
+            google: {
+                families: ['Droid Serif']
+            },
+            // For early access or custom font
+            custom: {
+                families: ['Nanum Gothic'],
+                urls: ['https://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+            }
+        });
+    </script>
+</head>
+<body>
+
+<div id="board_page_container" class="container" style="display:none;">
+    <% for (var i = 0; i < 6; i++) { %>
+    <div class="row">
+        <% for (var j = 0; j < 6; j++) { %>
+        <div class="board-item col-xs-2" data-position="<%= i %><%= j %>">
+            <textarea maxlength="60" readonly="readonly"></textarea>
+        </div>
+        <% } %>
+    </div>
+    <% } %>
+</div>
+
+<!-- Comment Modal -->
+<div id="comment_modal_container" class="modal" style="width:100%;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">댓글을 남겨주세요.</h4>
+            </div>
+            <div class="modal-body">
+                <p><textarea id="comment_textarea" maxlength="60"></textarea></p>
+            </div>
+            <div class="modal-footer">
+                <button id="comment_modal_cancel_btn" type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+                <button id="comment_modal_save_btn" type="button" class="btn btn-primary">저장</button>
+            </div>
+            <ul id="comment_list_container">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Write Modal -->
+<div id="write_modal_container" class="modal" style="width:100%;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">낙서를 남겨주세요.</h4>
+            </div>
+            <div class="modal-body">
+                <p><textarea id="write_textarea" maxlength="60"></textarea></p>
+            </div>
+            <div class="modal-footer">
+                <button id="write_modal_cancel_btn" type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+                <button id="write_modal_save_btn" type="button" class="btn btn-primary">저장</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="play_btn">
+    <img src="/images/play_btn.png"/>
+    <audio id="audio" preload="none">
+        <source src="/test5.mp3" type="audio/mp3" />
+    </audio>
+</div>
+
+<script type="text/javascript" src="/components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/components/underscore/underscore-min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/javascripts/httpUtil.js" charset="utf-8"></script>
+<script type="text/javascript" src="/javascripts/board.js" charset="utf-8"></script>
+</body>
+</html>
